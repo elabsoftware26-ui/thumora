@@ -5,7 +5,7 @@ const path = require("path");
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3000;
 
 app.use(express.json({ limit: "10mb" }));
 app.use(express.static(path.join(__dirname)));
