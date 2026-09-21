@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thumora — AI Thumbnail Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            <div class="logo-icon">T</div>
+            <span>Thumora</span>
+        </div>
+
+        <div class="nav-right">
+            <span class="credits">Free AI Credits</span>
+            <button class="history-btn">History</button>
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+    <main class="container">
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="badge">
+                ✨ AI THUMBNAIL GENERATOR
+            </div>
+
+            <h1>
+                Make thumbnails<br>
+                <span>people want to click.</span>
+            </h1>
+
+            <p>
+                Turn your video idea into a professional YouTube thumbnail
+                using AI.
+            </p>
+
+        </section>
+
+
+        <!-- GENERATOR -->
+        <section class="generator">
+
+            <!-- LEFT PANEL -->
+            <div class="controls">
+
+                <div class="section-title">
+                    <h2>Create your thumbnail</h2>
+                    <p>Tell the AI what you want.</p>
+                </div>
+
+
+                <!-- VIDEO IDEA -->
+                <div class="input-group">
+
+                    <label for="videoIdea">
+                        Video idea
+                    </label>
+
+                    <textarea
+                        id="videoIdea"
+                        placeholder="Example: What if humans could survive on Mars?"
+                    ></textarea>
+
+                </div>
+
+
+                <!-- THUMBNAIL TEXT -->
+                <div class="input-group">
+
+                    <label for="thumbnailText">
+                        Thumbnail text
+                    </label>
+
+                    <input
+                        type="text"
+                        id="thumbnailText"
+                        placeholder="Example: HUMANS ON MARS?!"
+                    >
+
+                </div>
+
+
+                <!-- STYLE -->
+                <div class="input-group">
+
+                    <label for="style">
+                        Thumbnail style
+                    </label>
+
+                    <select id="style">
+
+                        <option value="cinematic">
+                            🎬 Cinematic
+                        </option>
+
+                        <option value="gaming">
+                            🎮 Gaming
+                        </option>
+
+                        <option value="dramatic">
+                            🔥 Dramatic
+                        </option>
+
+                        <option value="realistic">
+                            📸 Ultra Realistic
+                        </option>
+
+                        <option value="funny">
+                            😂 Funny
+                        </option>
+
+                        <option value="mystery">
+                            👀 Mystery
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- IMAGE UPLOAD -->
+                <div class="input-group">
+
+                    <label>
+                        Character / image
+                    </label>
+
+                    <label class="upload-box">
+
+                        <input
+                            type="file"
+                            id="imageUpload"
+                            accept="image/*"
+                        >
+
+                        <div class="upload-icon">
+                            +
+                        </div>
+
+                        <strong>
+                            Upload an image
+                        </strong>
+
+                        <span>
+                            Optional — PNG or JPG
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <!-- GENERATE -->
+                <button
+                    id="generateBtn"
+                    class="generate-btn"
+                >
+                    <span>✨</span>
+                    Generate Thumbnail
+                </button>
+
+            </div>
+
+
+            <!-- RIGHT PANEL -->
+            <div class="preview">
+
+                <div class="preview-header">
+
+                    <div>
+                        <h2>Preview</h2>
+                        <span>1280 × 720</span>
+                    </div>
+
+                    <button
+                        id="downloadBtn"
+                        class="download-btn"
+                        disabled
+                    >
+                        Download
+                    </button>
+
+                </div>
+
+
+                <!-- THUMBNAIL PREVIEW -->
+                <div
+                    id="thumbnailPreview"
+                    class="thumbnail-preview"
+                >
+
+                    <div class="empty-preview">
+
+                        <div class="empty-icon">
+                            ✨
+                        </div>
+
+                        <h3>
+                            Your thumbnail will appear here
+                        </h3>
+
+                        <p>
+                            Enter your video idea and click
+                            <strong>Generate Thumbnail</strong>.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FEATURES -->
+        <section class="features">
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    ⚡
+                </div>
+
+                <div>
+                    <h3>AI Generated</h3>
+                    <p>Turn simple ideas into visuals.</p>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    🎯
+                </div>
+
+                <div>
+                    <h3>YouTube Ready</h3>
+                    <p>Designed for 1280 × 720.</p>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    🖼️
+                </div>
+
+                <div>
+                    <h3>Upload Your Image</h3>
+                    <p>Use your own characters.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 Thumora · AI Thumbnail Generator
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
